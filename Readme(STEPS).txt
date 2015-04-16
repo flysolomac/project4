@@ -1,4 +1,7 @@
-I reduced the size of a majority of the files involved with the website. I also added async tags to the Javascript links to remove render block. The CSS was inlined into the HTMl along with some Javascript.
+I reduced the size of a majority of the files involved with the website by using compression tool. 
+I also added async tags to the Javascript links to remove render block. 
+The CSS was inlined into the HTMl along with some Javascript.
+Within the Main.js I removed all the comments so the file will load faster and minified the functions so the browser can process them quickly.
 
 Resources Used:
 Used to reduce HTML size:
@@ -6,9 +9,6 @@ Used to reduce HTML size:
 
 Used to reduce CSS size:
 (http://cssminifier.com/)
-
-Used to reduce Javascript size:
-(http://javascript-minifier.com/)
 
 Used to Check page speed:
 (https://developers.google.com/speed/pagespeed/insights/)
