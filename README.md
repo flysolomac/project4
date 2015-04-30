@@ -5,22 +5,13 @@ I also added async tags to the Javascript links to remove render block.
 The CSS was inlined into the HTMl along with some Javascript.
 Within the Main.js I removed all the comments so the file will load faster and minified the functions so the browser can process them quickly.
 
-2) added async to analytics.js
-3) created a thumbnail for pizzeria.jpg
-4) update img src url for pizzeria.jpg
-5) moved google fonts to the top of the head node
-6) inlined javascript google font
-7) inlined relavent style.css
-8) left style.css file as is, but added media=handset for the smaller portrait @media style
-9) Reduced img profile picture
+1) added async to all script tags
+2) Compressed all images
+3) update img src url for pizzeria.png
+4) inlined javascript google font
+5) inlined all css
 
-
-
-
-
-
-
-
+This allowed me to have a pagespeed score of 95 or higher.
 
 Resources Used:
 Used to reduce HTML size:
@@ -36,10 +27,15 @@ Used to reduce size of images:
 (http://jpeg-optimizer.com/)
 (https://tinypng.com/)
 
-Since I was having trouble uploading through GitHub I used google drive as my initial host for my webpage in order to test page speed. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
 
-Website Project 4:
-(www.googledrive.com/host/0B7nPOvtrxK3hfjhOMzNUbW40dEljTEZBZk4zODROSFduOFZBRnY0TklJZjlvazBJanNkT2s)
+1) Changed paint pizzas from 200 to 35 (4 rows of 8 cols) 
+2) set document.queryselectorAll to 100 
+3) compressed pizza.jpg image
+4) moved the dx function call outside of the for loop. The value only changes when the slider is moved it doesn't not need to be called more than once.
+
+
+
 
 ############
 
