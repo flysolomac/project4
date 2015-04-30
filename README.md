@@ -1,3 +1,48 @@
+##### Changes
+
+I reduced the size of a majority of the files involved with the website by using compression tool. 
+I also added async tags to the Javascript links to remove render block. 
+The CSS was inlined into the HTMl along with some Javascript.
+Within the Main.js I removed all the comments so the file will load faster and minified the functions so the browser can process them quickly.
+
+2) added async to analytics.js
+3) created a thumbnail for pizzeria.jpg
+4) update img src url for pizzeria.jpg
+5) moved google fonts to the top of the head node
+6) inlined javascript google font
+7) inlined relavent style.css
+8) left style.css file as is, but added media=handset for the smaller portrait @media style
+9) Reduced img profile picture
+
+
+
+
+
+
+
+
+
+Resources Used:
+Used to reduce HTML size:
+(https://kangax.github.io/html-minifier/)
+
+Used to reduce CSS size:
+(http://cssminifier.com/)
+
+Used to Check page speed:
+(https://developers.google.com/speed/pagespeed/insights/)
+
+Used to reduce size of images:
+(http://jpeg-optimizer.com/)
+(https://tinypng.com/)
+
+Since I was having trouble uploading through GitHub I used google drive as my initial host for my webpage in order to test page speed. 
+
+Website Project 4:
+(www.googledrive.com/host/0B7nPOvtrxK3hfjhOMzNUbW40dEljTEZBZk4zODROSFduOFZBRnY0TklJZjlvazBJanNkT2s)
+
+############
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
