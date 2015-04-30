@@ -1,3 +1,45 @@
+##### Changes
+
+I reduced the size of a majority of the files involved with the website by using compression tool. 
+I also added async tags to the Javascript links to remove render block. 
+The CSS was inlined into the HTMl along with some Javascript.
+Within the Main.js I removed all the comments so the file will load faster and minified the functions so the browser can process them quickly.
+
+1) added async to all script tags
+2) Compressed all images
+3) update img src url for pizzeria.png
+4) inlined javascript google font
+5) inlined all css
+6) add meta tags to hmtl files to help with sizing of web page.
+
+This allowed me to have a pagespeed score of 95 or higher.
+
+Resources Used:
+Used to reduce HTML size:
+(https://kangax.github.io/html-minifier/)
+
+Used to reduce CSS size:
+(http://cssminifier.com/)
+
+Used to Check page speed:
+(https://developers.google.com/speed/pagespeed/insights/)
+
+Used to reduce size of images:
+(http://jpeg-optimizer.com/)
+(https://tinypng.com/)
+
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+
+1) Changed paint pizzas from 200 to 35 (4 rows of 8 cols) 
+2) set document.queryselectorAll to 100 
+3) compressed pizza.jpg image
+4) removed dx function call outside of for loop function. The value only changes when the slider is moved it does not need to be called more than once.
+
+
+
+
+############
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
