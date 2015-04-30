@@ -10,6 +10,7 @@ Within the Main.js I removed all the comments so the file will load faster and m
 3) update img src url for pizzeria.png
 4) inlined javascript google font
 5) inlined all css
+6) add meta tags to hmtl files to help with sizing of web page.
 
 This allowed me to have a pagespeed score of 95 or higher.
 
@@ -32,7 +33,7 @@ To optimize views/pizza.html, you will need to modify views/js/main.js until you
 1) Changed paint pizzas from 200 to 35 (4 rows of 8 cols) 
 2) set document.queryselectorAll to 100 
 3) compressed pizza.jpg image
-4) moved the dx function call outside of the for loop. The value only changes when the slider is moved it doesn't not need to be called more than once.
+4) removed dx function call outside of for loop function. The value only changes when the slider is moved it does not need to be called more than once.
 
 
 
