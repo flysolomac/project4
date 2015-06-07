@@ -30,15 +30,15 @@ Used to reduce size of images:
 
 To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
 
-1) Changed paint pizzas from 200 to 35 (4 rows of 8 cols) 
-2) set document.queryselectorAll to 100 
-3) compressed pizza.jpg image
-4) removed dx function call outside of for loop function. The value only changes when the slider is moved it does not need to be called more than once.
-
-
+1) Comments were left in main.js
+2) Added backface visibility to css and will-transform.
 
 
 ############
+
+
+
+
 
 ## Website Performance Optimization portfolio project
 
