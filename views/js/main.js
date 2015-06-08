@@ -373,8 +373,8 @@ var pizzaElementGenerator = function(i) {
   pizzaDescriptionContainer = document.createElement("div");
 
   pizzaContainer.classList.add("randomPizzaContainer");
-  pizzaContainer.style.width = "33.33%";
-  pizzaContainer.style.height = "325px";
+  pizzaContainer.style.width = "30%";
+  pizzaContainer.style.height = "30%";
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.classList.add("col-md-6");
 
@@ -435,17 +435,18 @@ var resizePizzas = function(size) {
     function sizeSwitcher (size) {
       switch(size) {
         case "1":
-              return 25+"%" ;
+              return 20+"%" ;
         case "2":
-          return 33.3+"%";
+          return 30+"%";
         case "3":
-          return 50+"%";
+          return 40+"%";
         default:
           console.log("bug in sizeSwitcher");
       }
     }
 
-    return newsize = sizeSwitcher(size);
+    var newsize = sizeSwitcher(size);
+    return newsize;
    
   }
 
@@ -475,12 +476,10 @@ var itemsLength = null;
     // Iterates through pizza elements on the page and changes their widths
     function changePizzaSizes(size) {
     
-     var yum = document.getElementsByClassName("randomPizzaContainer")
+     var yum = document.getElementsByClassName("randomPizzaContainer");
         for (var i = 0; i < yum.length; i++) {
       var dx = determineDx(size);
-      var newwidth = dx;
-       
-      yum[i].style.width = newwidth;
+      yum[i].style.width = dx;
     }
   }
 
@@ -538,8 +537,8 @@ function updatePositions() {
   var k = items.length
   var phase = ( top / 1250);
     for (var i = 0; i < k; i+=1) { 
-   var data = items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-        items[i].style.webkitTransform = "translateX("+data+")";
+  items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+        //items[i].style.webkitTransform = "translateX("+data+")"; 
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -560,9 +559,9 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
-  var cols = 4;
+  var cols = 6;
   var s = 256;
-  for (var i = 0; i < 35; i++) {
+  for (var i = 0; i < 35; i+=1) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";

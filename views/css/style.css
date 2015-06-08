@@ -32,17 +32,17 @@ form {
 .mover {
   will-change:transform;
    position:fixed; 
-  width: 256px;
+  
   z-index: -1;
-  -webkit-backface-visibility: hidden;
+  /*-webkit-backface-visibility: hidden;*/
 }
 
 .randomPizzaContainer {
-  
+  max-width: 100%;
     will-change:transform;
     float: left;
   display: flex;
-  -webkit-backface-visibility: hidden;
+ -webkit-backface-visibility: hidden;
    
 }
 
@@ -51,7 +51,7 @@ form {
   will-change:transform;
     display: table;
   clear:both;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; 
     
 }
 
